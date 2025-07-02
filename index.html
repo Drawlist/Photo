@@ -7,13 +7,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Генератор изображений</h1>
+  <h1>🎨 Генератор изображений</h1>
+
+  <div class="controls">
+    <input type="text" id="textInput" placeholder="Введите текст" />
+    <input type="color" id="bgColorInput" value="#3498db" />
+  </div>
+
   <canvas id="canvas" width="400" height="400"></canvas>
-  <br />
-  <button onclick="generateImage()">Сгенерировать</button>
-  <button onclick="downloadImage()">Скачать</button>
+
+  <div class="buttons">
+    <button onclick="generateImage()">Сгенерировать</button>
+    <button onclick="downloadImage()">Скачать</button>
+  </div>
+
+  <footer>
+    Сделано с ❤️ на GitHub Pages
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
